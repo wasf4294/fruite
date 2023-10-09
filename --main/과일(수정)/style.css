@@ -1,0 +1,112 @@
+@keyframes shadowAni {
+    100%{
+     top: 93%;
+    }
+}
+@keyframes shadowAni-2{
+    0%{
+        top:75%;
+    }
+    100%{
+        top:73%;
+    }
+}
+*{box-sizing: border-box;}
+html,
+body{overflow: hidden;}
+body{margin: 0;padding: 0;}
+.container{width: 100vw;height: 100vh;display: flex;}
+
+/* sidebar CSS */
+.sidebar-container{width: 100%;height: 50%;position: absolute;top: 80%;transition: 1s;z-index: 1;background-color: #1a1a1a30;}
+.sidebar-container.hover{top: 50%;}
+
+.up-down-container{width: 100%;height: 50%;display: flex;align-items: center;justify-content: center;}
+
+.upBtn-container{width: 100%;height: 50%; display: flex;justify-content: center;}
+.upBtn-box{width: 30%;height: 100%;display: flex;justify-content: center;align-items: center;}
+.upBtn{width: 60%;}
+.upBtn.hover{content: url(image/내림.png);}
+
+
+
+
+.clear-save-container{width: 100%;height: 50%;position: absolute;top: 50%;}
+.clear-container{width: 50%;height: 100%;position: absolute;display: flex;align-items: center;justify-content: center;}
+.clear-box{width: 40%;height: 40%;position: absolute;display: flex;align-items: center;justify-content: center;}
+.clear{width: 100%;}
+
+.save-container{width: 50%;height: 100%;position: absolute;left: 50%;display: flex;align-items: center;justify-content: center;}
+.save-box{width: 40%;height: 40%;position: absolute;display: flex;align-items: center;justify-content: center;}
+.save{width: 100%;}
+
+/* background CSS */
+.back-container{width: 100%;height: 100%;}
+.back{width: 100%;height: 100%;}
+.backImg{width: 100%;height: 100%;}
+
+/* topbar CSS */
+.TOPSPEAKER{width: 100%;height: 10%;position: absolute;top: 0%;display: flex;align-items: center;z-index: 2;left: 5%;}
+.topSpeaker-container{width: 5.5%;height: 100%;display: flex;align-items: center;justify-content: center;}
+.speaker-box{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;}
+.topSpeaker{width: 100%;}
+
+.TOPTEXT{width: 100%;height: 10%;position: absolute;top: 0%; display: flex; align-items: center;justify-content: center;}
+.topText-container{width: 90%;height:100%;display: flex;align-items: center;justify-content: center;}
+.text-box{width: 100%;display: flex;display: flex;align-items: center;}
+.textbar{width: 100%;}
+
+/* tool btn CSS */
+.btn-container{width: 80%; height: 40%;position: absolute;top: 50%;}
+
+/* change btn CSS */
+.left-container{width: 5%; height: 10%; position: absolute;translate: -50% -50%;top: 50%; left: 20%;}
+.left-box{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;}
+.leftBtn{width: 100%;}
+.right-container{width: 5%; height: 10%; position: absolute;translate: -50% -50%;top: 50%; left: 80%;}
+.right-box{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;}
+.rightBtn{width: 100%;}
+
+/* shadow btn CSS */
+.shadow-container{width: 7%;height: 10%;position: absolute;top: 94%; translate: -50% -50%;left: 50%;animation-name: shadowAni;animation-duration:.7s;animation-iteration-count: infinite;animation-direction: alternate;transition: 1s;}
+.shadow-container.hover{top:80%;animation-name: shadowAni-2;}
+.shadow-box{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;}
+.shadowBtn{width: 100%;}
+
+/* range CSS */
+.range-container{width: 8%;height: 3%;position: absolute;top: 14%;left: 50%;translate: -50% -50%;}
+.range-box{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;}
+#rangeInput{width: 100%;}
+
+/* color CSS */ 
+.color-container{top: 30%; left:78%; width: 15%;height: 40%;position: absolute;display: none;}
+.color-container.hover{display: flex;}
+.color-box{background-color: yellow;width: 100%;height: 100%;display: none;opacity: 0;}
+.color-box.hover{z-index: 3;display: flex;}
+
+.color-box > .box1{width: 50%;height: 100%;}
+.color-box > .box2{width: 50%;height: 100%;}
+
+.color-box > .box1 > .c1{width: 100%;height: 16.6%;background-color: #e4104d;}
+.color-box > .box1 > .c2{width: 100%;height: 16.6%;background-color: #e30405;}
+.color-box > .box1 > .c3{width: 100%;height: 16.6%;background-color: #fd6d27;}
+.color-box > .box1 > .c4{width: 100%;height: 16.6%;background-color: #f7a213;}
+.color-box > .box1 > .c5{width: 100%;height: 16.6%;background-color: #83bd00;}
+.color-box > .box1 > .c6{width: 100%;height: 16.6%;background-color: #3a9d00;}
+.color-box > .box2 > .c7{width: 100%;height: 16.6%;background-color: #00ac98;}
+.color-box > .box2 > .c8{width: 100%;height: 16.6%;background-color: #009eb4;}
+.color-box > .box2 > .c9{width: 100%;height: 16.6%;background-color: #0583f9;}
+.color-box > .box2 > .c10{width: 100%;height: 16.6%;background-color: #2e33d7;}
+.color-box > .box2 > .c11{width: 100%;height: 16.6%;background-color: #5a10bb;}
+.color-box > .box2 > .c12{width: 100%;height: 16.6%;background-color: #1a1a1a;}
+
+/* crayon CSS */
+.crayon-container{position: absolute; top: 30%; width: 15%;height: 40%;transition: 1s;left: 93%;z-index: 2;}
+.crayon-container.hover{left:81%;}
+.crayon-box{width: 100%;height: 100%;}
+.crayonImg{width: 100%;height: 100%;}
+
+/* canvas CSS */
+#drawing > div {position:absolute;left:0;top:0;width:550px;height:550px;background-size:cover;}
+
+.canvas-container{position: absolute;translate: -50% -50%; left: 50%;top: 50%;}
